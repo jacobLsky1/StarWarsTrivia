@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">StarWars Trivia</string>
+    <string name="trivia_Q">In what Movies does this Character Appear?</string>
+    <string name="movie_4">A New Hope</string>
+    <string name="movie_5">The Empire Strikes Back</string>
+    <string name="movie_6">Return Of The Jedi</string>
+    <string name="movie_1">The Phantom Menace</string>
+    <string name="movie_2">Attack Of The Clones</string>
+    <string name="movie_3">Revenge Of The Sith</string>
+
+</resources>

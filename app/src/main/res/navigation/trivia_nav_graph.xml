@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/trivia_nav_graph"
+    app:startDestination="@id/openingFragment">
+
+    <fragment
+        android:id="@+id/openingFragment"
+        android:name="com.jacoblip.andriod.starwarstrivia.ui.fragments.OpeningFragment"
+        android:label="OpeningFragment" >
+        <action
+            android:id="@+id/action_openingFragment_to_triviaFragment"
+            app:destination="@id/triviaFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/triviaFragment"
+        android:name="com.jacoblip.andriod.starwarstrivia.ui.fragments.TriviaFragment"
+        android:label="TriviaFragment" >
+        <action
+            android:id="@+id/action_triviaFragment_to_endGameFragment"
+            app:destination="@id/endGameFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/endGameFragment"
+        android:name="com.jacoblip.andriod.starwarstrivia.ui.fragments.EndGameFragment"
+        android:label="EndGameFragment" >
+        <action
+            android:id="@+id/action_endGameFragment_to_openingFragment"
+            app:destination="@id/openingFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+</navigation>
